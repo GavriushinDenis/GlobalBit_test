@@ -1,0 +1,24 @@
+#login {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.container{
+  padding: 40px;
+  background-color: grey;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+button{
+  background-color: turquoise;
+  padding: auto;
+}
