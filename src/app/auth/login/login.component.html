@@ -1,33 +1,30 @@
-<div class="centered container">
-<div>
-  <mat-card>
-    <mat-card-header>
-      <mat-card-title>
-        Sign in with your Flatkit Account
-      </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <form (ngSubmit)="onSubmit()" [formGroup]="form">
-        <div>
-          <mat-form-field>
-            <input type="email" matInput placeholder="Email" formControlName="email">
-            <mat-error *ngIf="form.get('email').invalid">Please enter correct email</mat-error>
-          </mat-form-field>
-        </div>
-        <div>
-          <mat-form-field>
-            <input type="password" matInput placeholder="Password" formControlName="password">
-            <mat-error *ngIf="form.get('password').invalid">Please enter password</mat-error>
-          </mat-form-field>
-        </div>
-        <div>
-          <mat-checkbox formControlName="keepSignIn">Keep me signed in</mat-checkbox>
-        </div>
-        <button type="submit" [disabled]="form.invalid">Sign in</button>
-      </form>
-    </mat-card-content>
-  </mat-card>
-  <a (click)="goToForgotPassword()">Forgot password?</a>
-  <span>Do not have an account? <a href="">Sign up</a></span>
-</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+<mat-card class="card">
+  <mat-card-content>
+    <h4 class="full-width">
+      Sign in with your Flatkit Account
+    </h4>
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      <div>
+        <mat-form-field class="full-width">
+          <input type="email" matInput placeholder="Email" formControlName="email">
+          <mat-error *ngIf="form.get('email').invalid">Please enter correct email</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field class="full-width">
+          <input type="password" matInput placeholder="Password" formControlName="password">
+          <mat-error *ngIf="form.get('password').invalid">Please enter password</mat-error>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-checkbox class="full-width" formControlName="keepSignIn">Keep me signed in</mat-checkbox>
+      </div>
+      <button type="submit" class="full-width" [disabled]="form.invalid">Sign in</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+<p class="full-width"><a (click)="goToForgotPassword()">Forgot password?</a></p>
+<p class="full-width">Do not have an account? <a>Sign up</a></p>
 </div>

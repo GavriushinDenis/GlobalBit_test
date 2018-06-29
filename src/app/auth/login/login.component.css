@@ -1,24 +1,39 @@
-#login {
-  position: relative;
-  margin: 5% auto;
-  width: 600px;
-  height: 400px;
-  background: #FFF;
-  border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+.card {
+  box-sizing: border-box;
+  max-width: 550px;
 }
-.container{
-  padding: 40px;
-  background-color: grey;
+
+.full-width {
+  width: 100%;
+  font-size: calc(10px + .7vw);
 }
-.centered{
+
+button {
+  border: none;
+  background: darkturquoise;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+a {
+  color: darkturquoise;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.container {
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%)
-}
-button{
-  background-color: turquoise;
-  padding: auto;
+  -webkit-transform: translate(-50%, -50%);
 }
